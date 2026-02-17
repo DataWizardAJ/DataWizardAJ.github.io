@@ -19,10 +19,10 @@ First, let's just calculate the Volume of a sphere with a known Radius of 5, jus
 
 To get the Volume, we multiply the Radius cubed by 4/3rds of Pi
 
-'''ruby
+```ruby
 r = 5
 volume = 4/3 * np.pi * r**3
-'''
+```
 
 Great, that's working as intended!
 
@@ -30,10 +30,10 @@ Next, let's just use it to check the Volumes of the planets in our Solar System 
 
 Taking a list of the Radii (in Km) of each Planet and passing that into the volume equation.
 
-'''ruby
+```ruby
 radii = np.array([2439.7,6051.8,6371,3389.7,69911,58232,25362,24622])
 volumes = 4/3 * np.pi * radii**3
-'''
+```
 
 Wow, the mind boggles at these numbers.
 
@@ -51,19 +51,19 @@ Fantastic! We now have our upper limit and lower limit, which means we're ready 
 
 To make it easier for ourselves, let's save this calculation as a Function that we'll call planet_volumes.
 
-'''ruby
+```ruby
 def planet_volumes(radius):
     v = 4/3 * np.pi * radius**3
     return v
-'''
+```
 
 Now that we have our Function, let's create our array of A MILLION theoretical planet radii to pass into it.
 
-'''ruby
+```ruby
 radii = np.random.randint(1975,78300, 1000000)
 
 planet_volumes(radii)
-'''
+```
 
 Wow...
 
@@ -77,11 +77,11 @@ Just as a consideration, there is a chance that this may return some negative va
 
 To do this we would simply write the Function as follows.
 
-'''ruby
+```ruby
 def planet_volumes(radius):
     v = 4/3 * np.pi * radius.astype(float)**3
     return v
-'''
+```
 
 This should insulate us from negative errors.
 
