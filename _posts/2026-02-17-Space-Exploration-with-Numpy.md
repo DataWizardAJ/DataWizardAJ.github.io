@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Calculating Volumes of 1 Million Theoretical Planets with Python
-image: "/posts/1m Planets.jpg"
+image: "/posts/1m_Planets.jpg"
 tags: [Numpy, Planets]
 ---
 
