@@ -47,6 +47,8 @@ Great, so that gives us a useful lower limit to work with. So, what about the up
 
 The largest known Planet is a Gas Giant called ROXs 42 Bb, which is nearly 500 light years away! ROXs 42 Bb is 1.12 times the radius of the largest Planet in our Solar System, i.e Jupiter. This gives us a radius of 1.12 * 69911km = 78,300km.
 
+---
+
 Fantastic! We now have our upper limit and lower limit, which means we're ready to go.
 
 To make it easier for ourselves, let's save this calculation as a Function that we'll call planet_volumes.
@@ -72,6 +74,8 @@ There we go, we now have the Volumes of a MILLION theoretical Planets. What can 
 Well, we can use it to calculate the theoretical volumes of precious minerals, in a future where we have achieved interplanetary travel. Or we can use it to calculate gravitational pulls of theoritcal space travel through uncharted areas of space.
 
 We can do some really exciting things with this incredibly fast calculation!
+
+---
 
 Just as a consideration, there is a chance that this may return some negative values if the values become too large for int32. If we want to guard against this, we can make sure to cast it as a Float directly within the Function.
 
